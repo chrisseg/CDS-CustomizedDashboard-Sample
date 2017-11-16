@@ -1,0 +1,101 @@
+﻿.border-bottom {
+  border-bottom: 2px solid #005fb1; }
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed; }
+  body .body-content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: 0 auto;
+    max-width: initial; }
+
+.company-info {
+  border-right: 2px solid #ccc;
+  padding: 20px;
+  height: 100%; }
+  .company-info .company-img {
+    max-width: 100%;
+    position: relative;
+    left: calc(50% - 88px);
+    margin: 20px 0; }
+  .company-info .company-info-entry {
+    line-height: 50px;
+    border-bottom: 1px solid #ccc;
+    height: 50px; }
+    .company-info .company-info-entry div {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+
+.factory-info {
+  padding: 20px;
+  height: 100%; }
+  .factory-info .factory-header {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px; }
+    .factory-info .factory-header .facroty-btn {
+      margin: 0 16px; }
+  .factory-info #one-factory-info .select-hint {
+    text-align: center;
+    color: #005fb1; }
+  .factory-info #one-factory-info .factory-info-true {
+    display: none; }
+    .factory-info #one-factory-info .factory-info-true .factory-img {
+      max-width: 200px;
+      position: relative;
+      left: calc(50% - 88px);
+      margin: 20px 0; }
+    .factory-info #one-factory-info .factory-info-true .factory-info-entry {
+      line-height: 50px;
+      border-bottom: 1px solid #ccc;
+      height: 50px; }
+      .factory-info #one-factory-info .factory-info-true .factory-info-entry div {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap; }
+
+.widget-card {
+  background: #ffffff;
+  margin: 10px 2px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 0px 1px 2px #ccc;
+  display: inline-block;
+  width: 100%; }
+  .widget-card .widget-card-title {
+    font-size: 1.5em;
+    color: #005fb1;
+    text-align: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #ccc; }
+  .widget-card .widget-card-content {
+    width: 100%;
+    height: 100%; }
+    .widget-card .widget-card-content canvas {
+      width: 100%;
+      height: 100%; }
+  .widget-card .value-num {
+    font-size: 3em;
+    padding: 50px;
+    text-align: center; }
+
+#famt-001-area, #gbox01-area {
+  padding: 20px 0; }
+  #famt-001-area .area-title, #gbox01-area .area-title {
+    text-align: center; }
+
+#famt-001-area {
+  height: 65%; }
+  #famt-001-area .line-chart-card-wrapper {
+    height: calc(100% - 60px); }
+    #famt-001-area .line-chart-card-wrapper .line-chart-card {
+      height: 100%; }
+      #famt-001-area .line-chart-card-wrapper .line-chart-card #widget-card-speed {
+        height: calc(100% - 50px); }
+
+#gbox01-area {
+  height: 35%; }
+

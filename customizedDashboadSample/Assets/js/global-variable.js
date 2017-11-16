@@ -1,0 +1,1 @@
+﻿var _COMPANYID = '[Please fill your company ID]';

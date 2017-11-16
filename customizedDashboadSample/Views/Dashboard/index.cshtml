@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "index";
+}
+
+@section scripts{ 
+    <script>
+        var _COMPANYObj = @Html.Raw(ViewBag.companyObj);
+        var _FactoryList = @Html.Raw(ViewBag.factoryList);
+        console.log(_COMPANYObj);
+        console.log('=============================');
+        console.log(_FactoryList);
+    </script>
+
+    <script src="~/Assets/js/call-cds-api.js"></script>
+    <script src="~/Assets/js/main.js"></script>
+}
+
+
+<div class="company-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+    <img class="company-img" id="company-img" />
+    <!-- company name -->
+    <div class="company-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="company-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">Company Name</div>
+        <div class="company-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="company-name"></div>
+    </div>
+
+    <!-- short name -->
+    <div class="company-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="company-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">Short Name</div>
+        <div class="company-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="company-short-name"></div>
+    </div>
+
+    <!-- Contact Email -->
+    <div class="company-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="company-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">Contact Email</div>
+        <div class="company-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="company-email"></div>
+    </div>
+
+    <!-- CultureInfoName -->
+    <div class="company-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="company-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">Culture Info</div>
+        <div class="company-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="company-culture"></div>
+    </div>
+
+    <!-- CultureInfoName -->
+    <div class="company-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="company-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">Address</div>
+        <div class="company-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="company-address"></div>
+    </div>
+
+</div>
+
+<div class="factory-info col-lg-6 col-md-6 col-sm-6 col-xs-12">
+    <div id="factory-selecter" class="factory-header col-lg-12 col-md-12 col-sm-12 col-xs-12"></div>
+    <div id="one-factory-info" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+        <h3 id ="select-hint" class="select-hint">Please Select Factory</h3>
+
+        <div id ="factory-info-true" class="factory-info-true">
+            <img class="factory-img" id="factory-img" />
+
+            <!-- factory name -->
+            <div class="factory-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="factory-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">factory Name</div>
+                <div class="factory-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="factory-name"></div>
+            </div>
+
+            <!-- Latitude -->
+            <div class="factory-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="factory-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">Latitude</div>
+                <div class="factory-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="factory-latitude"></div>
+            </div>
+
+            <!-- Longitude Email -->
+            <div class="factory-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="factory-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">Longitude</div>
+                <div class="factory-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="factory-longitude"></div>
+            </div>
+
+            <!-- Description -->
+            <div class="factory-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="factory-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">Description</div>
+                <div class="factory-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="factory-description"></div>
+            </div>
+
+            <!-- TimeZone -->
+            <div class="factory-info-entry col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="factory-info-entry-key col-lg-6 col-md-6 col-sm-6 col-xs-6">TimeZone</div>
+                <div class="factory-info-entry-value col-lg-6 col-md-6 col-sm-6 col-xs-6" id="factory-timeZone"></div>
+            </div>
+
+        </div>
+
+        
+
+    </div>
+</div>

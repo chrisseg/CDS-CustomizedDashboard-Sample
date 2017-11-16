@@ -1,0 +1,151 @@
+﻿.border-bottom {
+    border-bottom: 2px solid #005fb1;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    .body-content {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        margin: 0 auto;
+        max-width: initial;
+    }
+}
+
+.company-info {
+    border-right: 2px solid #ccc;
+    padding: 20px;
+    height: 100%;
+
+    .company-img {
+        max-width: 100%;
+        position: relative;
+        left: calc(50% - 88px);
+        margin: 20px 0;
+    }
+
+    .company-info-entry {
+        div {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        line-height: 50px;
+        border-bottom: 1px solid #ccc;
+        height: 50px;
+    }
+}
+
+
+
+.factory-info {
+    padding: 20px;
+    height: 100%;
+
+    .factory-header {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+
+        .facroty-btn {
+            margin: 0 16px;
+        }
+    }
+
+    #one-factory-info {
+        .select-hint {
+            text-align: center;
+            color: #005fb1;
+        }
+
+        .factory-info-true {
+            display: none;
+
+            .factory-img {
+                max-width: 200px;
+                position: relative;
+                left: calc(50% - 88px);
+                margin: 20px 0;
+            }
+
+            .factory-info-entry {
+
+                div {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+
+                line-height: 50px;
+                border-bottom: 1px solid #ccc;
+                height: 50px;
+            }
+        }
+    }
+}
+
+.card-wrapper {
+
+}
+.widget-card {
+    background: #ffffff;
+    margin: 10px 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 2px #ccc;
+    display: inline-block;
+    width: 100%;
+
+    .widget-card-title {
+        font-size: 1.5em;
+        color: #005fb1;
+        text-align: center;
+        padding: 6px 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .widget-card-content {
+        width: 100%;
+        height: 100%;
+
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .value-num {
+        font-size: 3em;
+        padding: 50px;
+        text-align: center;
+    }
+}
+
+#famt-001-area, #gbox01-area {
+    padding: 20px 0;
+    .area-title {
+        text-align: center;
+    }
+}
+
+#famt-001-area {
+    height:65%;
+    .line-chart-card-wrapper {
+        height: calc(100% - 60px);
+
+        .line-chart-card {
+            height: 100%;
+
+            #widget-card-speed {
+                height: calc(100% - 50px);
+            }
+        }
+    }
+}
+
+#gbox01-area {
+    height: 35%;
+}
